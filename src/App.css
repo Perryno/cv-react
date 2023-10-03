@@ -1,16 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap");
+
 .App {
   text-align: center;
+  background-color: #fafafa;
+  font-family: "Inter", sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +22,94 @@
   color: white;
 }
 
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1630px !important;
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.linkColor {
+  color: #06c;
+  text-decoration: none;
+  font-weight: 500;
+}
+.linkColor:hover {
+  text-decoration: underline;
+}
+
+#home {
+  margin-top: 10vh;
+}
+
+#myNav {
+  display: flex;
+  background-color: #eaeaea;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+}
+
+.noNav {
+  padding-top: 60px;
+}
+
+#name {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.leftHome {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  justify-content: center;
+}
+.rightHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeLinks {
+  display: flex;
+  font-size: 2rem;
+  gap: 0.5rem;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.preContact {
+  font-weight: 500;
+}
+
+#emailIcon {
+  margin-right: 0.3rem;
+  font-size: 1.3rem;
+  vertical-align: text-top;
+  color: rgb(169 39 39);
+}
+
+#telephoneIcon {
+  margin-right: 0.3rem;
+}
+
+.rightHome img {
+  width: 70%;
+}
+
+.homeContacts {
+  text-align: start;
 }
