@@ -3,14 +3,16 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import MyNav from "./Components/MyNav";
 import MyHome from "./Components/MyHome";
-import HomeContacts from "./Components/HomeComponents/HomeContacts";
+
+import Competenze from "./Components/Competenze";
 function App() {
   return (
     <div className="App">
       <MyNav />
       <div className="noNav container">
         <MyHome />
-        <HomeContacts />
+
+        <Competenze />
       </div>
     </div>
   );

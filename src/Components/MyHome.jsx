@@ -1,7 +1,7 @@
 import React from "react";
 
 import laptopImg from "../Assets/laptop.png";
-
+import HomeContacts from "./HomeComponents/HomeContacts";
 function MyHome() {
   return (
     <div id="home" className="row">
@@ -15,6 +15,7 @@ function MyHome() {
       <div className="rightHome col-sm-6">
         <img src={laptopImg} alt="laptop" />
       </div>
+      <HomeContacts />
     </div>
   );
 }
