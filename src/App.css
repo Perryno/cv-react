@@ -212,66 +212,13 @@
   text-align: start;
 }
 
-/* ------------Competenze---------------*/
-
-.skillsType {
-  font-size: 1.5rem;
-  align-items: center;
-  display: flex;
-  margin-right: 1rem;
-  font-weight: 600;
-  color: white;
-}
-
-.skillsContainer {
-  font-size: 3rem;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding-block: 5px;
-  justify-content: center;
-}
-
-.box {
-  margin-bottom: 10px;
-  display: flex;
-
-  padding: 4px;
-  border-radius: 10px;
-  padding-left: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-
-  transition: all 0.3s ease-in-out;
-  flex-direction: column;
-}
-
-.allCompetenze {
-  display: block;
-  max-width: 570px;
-}
-
-.frontEndSkills {
-  background-color: #3ab06b;
-}
-
-.skillIcon {
-  -webkit-animation: slideInRight 3.3s linear 0s 1 normal both;
-  -webkit-transform-origin: 0% 100%;
-  animation: slideInRight 3.3s linear 0s 1 normal both;
-  transform-origin: 0% 100%;
-  cursor: pointer;
-}
-.typeContainer {
-  display: flex;
-  transition: all 0.3s;
-}
+/* ------------icone Competenze---------------*/
 
 #html5 {
   color: #ed6533;
 }
 
 #css {
-  font-size: 2.6rem;
   color: rgb(21 114 183);
 }
 
@@ -289,30 +236,109 @@
 
 #bootstrap {
   color: rgb(138 20 252);
-  margin-left: 3px;
+  padding-right: 2px;
+  padding-left: 3px;
 }
 
 #sass {
   color: rgb(207 100 154);
-  margin-left: 8px;
+  padding-left: 8px;
 }
 
-.testo-nascosto {
-  .testo-nascosto {
-    opacity: 0;
-    transition: opacity 0.3s;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
+/* ------------Competenze---------------*/
 
-  .expanded {
-    height: auto;
-    transition: height 0.3s ease; /* Imposta la durata e l'effetto di transizione desiderati */
-  }
+.allCompetenze {
+  display: block;
+  max-width: 567px;
+}
+
+.box {
+  margin-bottom: 10px;
+  display: flex;
+  padding: 4px;
+  border-radius: 10px;
+  padding-left: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  flex-direction: column;
+
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.notExpanded {
+  height: 73px;
+}
+
+.expanded {
+  height: 113px;
+}
+
+.frontEndSkills {
+  background-color: #3ab06b;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.typeContainer {
+  display: flex;
+  transition: all 0.3s;
+}
+
+.skillsType {
+  font-size: 1.5rem;
+  align-items: center;
+  display: flex;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.skillsContainer {
+  font-size: 3.5rem;
+  display: flex;
+
+  align-items: center;
+  padding-block: 5px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.skillIcon {
+  -webkit-animation: slideInRight 3.3s linear 0s 1 normal both;
+  -webkit-transform-origin: 0% 100%;
+  animation: slideInRight 3.3s linear 0s 1 normal both;
+  transform-origin: 0% 100%;
+  cursor: pointer;
+  transition: font-size 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.skillIcon:hover {
+  font-size: 4.8rem;
+}
+
+.iconSpan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.iconSpan span {
+  font-size: 1.5rem;
+  position: absolute;
+
+  transition: all 0.3s ease-in-out;
+
+  top: 67px;
+  color: white;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
 }
