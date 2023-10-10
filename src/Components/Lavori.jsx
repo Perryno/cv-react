@@ -4,13 +4,24 @@ function Lavori() {
   return (
     <div>
       <div>Ecco alcuni dei miei progetti:</div>
-      <div className="progetti">
-        <div className="netflixBox box">
-          <img src={netflix} alt="netflix" />
+      <div>
+        <div className="progetti row">
+          <div className="imgBox netflixBox col-sm-12 col-md-6">
+            <div className="overlay">
+              <img className="progettoImg" src={netflix} alt="netflix" id="immagineBox" />
+              <div className="text">Testo</div>
+            </div>
+          </div>
+
+          {
+            ////////////////////////////////
+          }
         </div>
-        <div>lavoro</div>
-        <div>e lavoro</div>
       </div>
+
+      {
+        //----------------------
+      }
     </div>
   );
 }

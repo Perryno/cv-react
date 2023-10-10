@@ -27,12 +27,12 @@ function HomeContacts() {
         </a>
       </div>
       <div className="homeLinks">
-        <div>
-          <BiLogoLinkedin />
-        </div>
-        <div>
-          <AiFillGithub />
-        </div>
+        <a href="https://www.linkedin.com/in/andrea-caforio-8072a0247/">
+          <BiLogoLinkedin className="hoverLink linkedinHover" />
+        </a>
+        <a href="https://github.com/Perryno">
+          <AiFillGithub className="hoverLink" />
+        </a>
       </div>
     </div>
   );
