@@ -1,23 +1,10 @@
-import React from "react";
+import { React, useState, useCallback } from "react";
 
-import { FaCss3Alt, FaSass, FaBootstrap } from "react-icons/fa";
-import { BsGit } from "react-icons/bs";
-import { useState } from "react";
-import {
-  BiLogoJavascript,
-  BiLogoReact,
-  BiLogoHtml5,
-  BiLogoTypescript,
-  BiLogoPostgresql,
-  BiLogoJava,
-  BiLogoSpringBoot,
-  BiLogoRedux,
-  BiLogoCss3
-} from "react-icons/bi";
+import { FaSass, FaBootstrap } from "react-icons/fa";
 
-import { useCallback } from "react";
+import { BiLogoJavascript, BiLogoReact, BiLogoHtml5, BiLogoRedux, BiLogoCss3 } from "react-icons/bi";
 
-function Competenze() {
+function FrontEndCompetenze() {
   const [frontIsHovering, setFrontIsHovering] = useState(false);
 
   const [whichIsHovering, setWhichIsHovering] = useState(null);
@@ -46,11 +33,10 @@ function Competenze() {
       return "hide";
     }
   };
-
   return (
-    <div>
+    <div className="frontendBlock">
       <div className="allCompetenze">
-        <div>Le mie competenze:</div>
+        <div className="leMieComp">Le mie competenze:</div>
         <div
           className={`frontEndSkills box
         ${frontIsHovering ? "expanded" : "notExpanded"} `}
@@ -148,25 +134,9 @@ function Competenze() {
             </div>
           </div>
         </div>
-        <div className="backEndSkills box">
-          <div className="skillsType">Backend:</div>
-          <div className="skillsContainer">
-            <BiLogoTypescript />
-            <BiLogoJava />
-            <BiLogoSpringBoot />
-            <BiLogoPostgresql />
-          </div>
-        </div>
-        <div className="altro box">
-          <div className="skillsType"> Altro:</div>
-          <div className="skillsContainer">
-            {" "}
-            <BsGit />
-          </div>
-        </div>
       </div>
     </div>
   );
 }
 
-export default Competenze;
+export default FrontEndCompetenze;

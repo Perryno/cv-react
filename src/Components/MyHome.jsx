@@ -2,6 +2,7 @@ import React from "react";
 
 import laptopImg from "../Assets/laptop.png";
 import HomeContacts from "./HomeComponents/HomeContacts";
+
 function MyHome() {
   return (
     <div>
