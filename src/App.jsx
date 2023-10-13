@@ -13,10 +13,16 @@ function App() {
       <MyNav />
       <div className="noNav container">
         <MyHome />
-
-        <FrontEndCompetenze />
-        <BackEndCompetenze />
-        <Lavori />
+        <div className="row">
+          <div className="col-xl-6">
+            <FrontEndCompetenze />
+            <BackEndCompetenze />
+          </div>
+          <div className="col-xl-6">
+            {" "}
+            <Lavori />
+          </div>
+        </div>
       </div>
     </div>
   );
