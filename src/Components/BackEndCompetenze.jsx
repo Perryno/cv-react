@@ -43,6 +43,19 @@ function BackEndCompetenze() {
             <div className="skillsType backend">Backend:</div>
             <div className="skillsContainer">
               <div className="iconSpan">
+                <BiLogoJava
+                  id="java"
+                  className="skillIcon"
+                  onMouseOver={() => mouseOver("Java")}
+                  onMouseOut={() => {
+                    handleMouseOut();
+                    handleHovering(null);
+                  }}
+                />
+                <span className={hideOrNot("Java")}>Java</span>
+              </div>
+
+              <div className="iconSpan">
                 <BiLogoTypescript
                   id="typescript"
                   className="skillIcon"
@@ -56,18 +69,6 @@ function BackEndCompetenze() {
                 <span className={hideOrNot("Typescript")}>Typescript</span>
               </div>
 
-              <div className="iconSpan">
-                <BiLogoJava
-                  id="java"
-                  className="skillIcon"
-                  onMouseOver={() => mouseOver("Java")}
-                  onMouseOut={() => {
-                    handleMouseOut();
-                    handleHovering(null);
-                  }}
-                />
-                <span className={hideOrNot("Java")}>Java</span>
-              </div>
               <div className="iconSpan">
                 <BiLogoSpringBoot
                   id="spring"
