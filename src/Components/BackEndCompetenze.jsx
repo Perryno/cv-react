@@ -1,6 +1,5 @@
 import { React, useState, useCallback } from "react";
 
-import { BsGit } from "react-icons/bs";
 import { BiLogoTypescript, BiLogoPostgresql, BiLogoJava, BiLogoSpringBoot } from "react-icons/bi";
 
 function BackEndCompetenze() {

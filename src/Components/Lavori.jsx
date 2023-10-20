@@ -8,7 +8,7 @@ import Quiz from "./LavoriSingoli/Quiz";
 function Lavori() {
   return (
     <div>
-      <div className="mieiProgetti">Ecco alcuni dei miei progetti:</div>
+      <div className="mieiProgetti">Alcuni dei miei progetti:</div>
       <div>
         <div className="progetti row">
           <div className="col-sm-12 col-md-6 flex-grow-1">

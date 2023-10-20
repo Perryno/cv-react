@@ -6,7 +6,7 @@ import HomeContacts from "./HomeComponents/HomeContacts";
 function MyHome() {
   return (
     <div>
-      <div id="home" className="row">
+      <div id="home" className="row mb-4">
         <div className="leftHome col-sm-6">
           <div className="mb-4">
             <h1 id="name">
