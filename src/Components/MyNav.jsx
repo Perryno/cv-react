@@ -2,15 +2,14 @@ import React from "react";
 
 function MyNav() {
   return (
-    <div id="myNav">
-      <div>Home</div>
-      <div>About</div>
-      <div>Progetti</div>
+    <div id="myNav" className="row cvDownloader ">
+      <a href="ciao" className="col-6 cvGrafico">
+        CV grafico
+      </a>
 
-      <div>Contattami</div>
-      <div>
-        <button>Scarica CV</button>
-      </div>
+      <a href="lol" className="col-6 cvEuropass">
+        CV Europass
+      </a>
     </div>
   );
 }

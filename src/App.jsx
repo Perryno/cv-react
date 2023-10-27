@@ -16,12 +16,12 @@ function App() {
         <div className="noNav container">
           <MyHome />
           <div className="row">
-            <div className="col-xl-6 mb-4">
+            <div className="col-xl-6 mb-5">
               <FrontEndCompetenze />
               <BackEndCompetenze />
             </div>
 
-            <div className="col-xl-6 mb-4">
+            <div className="col-xl-6 mb-5">
               <div className="mieiProgetti">Certificazioni:</div>
               <Certificazioni />
             </div>

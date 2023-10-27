@@ -18,7 +18,6 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 150% 100%;
-  height: 900px;
 }
 
 .App-logo {
@@ -35,12 +34,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 57%);
-  border-radius: 6px;
+  background: rgb(23 79 120);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgb(18, 67, 102);
 }
 
 ::-webkit-scrollbar-horizontal {
@@ -52,12 +50,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 57%);
-  border-radius: 6px;
+  background: rgb(23 79 120);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgb(18, 67, 102);
 }
 
 .App-header {
@@ -194,19 +191,43 @@
 }
 
 #myNav {
-  display: flex;
-  background-color: #eaeaea;
   position: fixed;
   z-index: 10;
   width: 100%;
-  justify-content: space-around;
-  height: 50px;
-  align-items: center;
+
+  margin: 0;
 }
 
 .noNav {
   padding-top: 60px;
 }
+
+.cvDownloader {
+  height: 50px;
+}
+
+.cvDownloader a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.205), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  background-color: rgb(23 79 120);
+  height: 100%;
+  font-size: 1.2rem;
+  transition: all 0.1s ease;
+}
+
+.cvDownloader a:hover {
+  background-color: rgb(18, 67, 102);
+}
+
+.cvGrafico {
+  border-right: rgb(255, 255, 255) 1px solid;
+}
+
+/*---------------------------*/
 
 #name {
   font-size: 4rem;
@@ -269,7 +290,8 @@
 }
 
 .rightHome img {
-  width: 70%;
+  width: 60%;
+  margin-bottom: 35px;
 }
 
 .homeContacts {
@@ -686,3 +708,10 @@
 }
 
 /* 24px di margin bottom quando faccio il responsive */
+
+/* ----------------------*/
+.descrizioneMia {
+  text-shadow: 0.1em 0.1em 0.2em hsla(0, 0%, 53%, 0.192);
+
+  font-weight: 500;
+}
