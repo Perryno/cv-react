@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto 70%;
+  transition: background-size 0.3s ease;
 }
 
 .appBot {
@@ -66,12 +67,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-@media (min-width: 1800px) {
-  .container {
-    max-width: 1630px !important;
-  }
 }
 
 .App-link {
@@ -224,7 +219,7 @@
 }
 
 .cvGrafico {
-  border-right: rgb(255, 255, 255) 1px solid;
+  border-right: #fafafa 1px solid;
 }
 
 /*---------------------------*/
@@ -464,7 +459,7 @@
   font-size: 1.5rem;
   font-weight: 800;
   color: #212529;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-shadow: 0.1em 0.1em 0.2em hsla(0, 0%, 53%, 0.192);
 }
 
@@ -554,7 +549,7 @@
   font-size: 1.5rem;
   font-weight: 800;
   color: #212529;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-shadow: 0.1em 0.1em 0.2em hsla(0, 0%, 53%, 0.192);
 }
 
@@ -689,7 +684,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   background-color: #fafafa;
-  padding: 3px;
+  padding: 2px;
   padding-inline: 7px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -707,11 +702,328 @@
   color: rgb(26 19 50);
 }
 
-/* 24px di margin bottom quando faccio il responsive */
-
-/* ----------------------*/
+/* ---------descrizione-------------*/
 .descrizioneMia {
   text-shadow: 0.1em 0.1em 0.2em hsla(0, 0%, 53%, 0.192);
 
   font-weight: 500;
+  text-align: justify;
+}
+
+/* ---------responsive-------------*/
+
+.skillsSpan {
+  display: none;
+}
+
+@media screen and (min-width: 1800px) {
+  .container {
+    max-width: 1630px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .descrizione-certificazione {
+    font-size: 1rem;
+    padding-block: 1.2rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1.2rem;
+    padding: 5px;
+    padding-inline: 9px;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .skillIcon:hover {
+    font-size: 4.5rem;
+  }
+
+  .skillsContainer {
+    font-size: 3.4rem;
+  }
+
+  .iconSpan span {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .skillIcon:hover {
+    font-size: 4.7rem;
+  }
+
+  .skillsContainer {
+    font-size: 3.7rem;
+    gap: 0.4rem;
+  }
+
+  .iconSpan span {
+    font-size: 1.5rem;
+  }
+  .skillsSpan {
+    display: initial;
+  }
+  .allCompetenze {
+    max-width: 690px;
+  }
+  .expanded {
+    height: 118px;
+  }
+  .notExpanded {
+    height: 76px;
+  }
+  .appTop {
+    background-size: auto 45%;
+  }
+  .descrizione-certificazione {
+    font-size: 1.2rem;
+    padding-block: 1.6rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1.3rem;
+    padding: 5px;
+    padding-inline: 9px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .descrizione-certificazione {
+    font-size: 1.1rem;
+    padding-block: 1rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1.2rem;
+    padding: 5px;
+    padding-inline: 9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .appTop {
+    background-size: auto 25%;
+  }
+
+  .rightHome img {
+    display: none;
+  }
+
+  .leftHome {
+    margin-bottom: 1rem;
+  }
+
+  .EPICODE {
+    margin-bottom: 24px;
+  }
+  .skillsSpan {
+    display: none;
+  }
+  .typeContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skillsType {
+    margin-right: 0;
+  }
+  .expanded {
+    height: 155px;
+  }
+  .notExpanded {
+    height: 116px;
+  }
+  .box {
+    padding-left: 4px;
+  }
+
+  .descrizione-certificazione {
+    font-size: 1.3rem;
+    padding-block: 2rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1.6rem;
+    padding: 8px;
+    padding-inline: 17px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .skillIcon:hover {
+    font-size: 4.5rem;
+  }
+
+  .skillsContainer {
+    font-size: 3.7rem;
+    gap: 0;
+  }
+
+  .iconSpan span {
+    font-size: 1.4rem;
+  }
+
+  .box {
+    padding-inline: 4px;
+  }
+}
+@media screen and (max-width: 469px) {
+  .skillIcon:hover {
+    font-size: 4.5rem;
+  }
+
+  .skillsContainer {
+    font-size: 3.4rem;
+    gap: 0;
+  }
+
+  .skillsType {
+    font-size: 1.4rem;
+  }
+
+  .iconSpan span {
+    font-size: 1.3rem;
+  }
+
+  .expanded {
+    height: 145px;
+  }
+  .notExpanded {
+    height: 106px;
+  }
+
+  .descrizione-certificazione {
+    font-size: 1.2rem;
+    padding-block: 2rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1.4rem;
+
+    padding-inline: 17px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .skillIcon:hover {
+    font-size: 4.5rem;
+  }
+
+  .skillsContainer {
+    font-size: 3.3rem;
+    gap: 0;
+  }
+  .descrizione-certificazione {
+    font-size: 1.2rem;
+    padding-block: 1.2rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1.3rem;
+
+    padding-inline: 17px;
+  }
+  .appTop {
+    background-size: auto 20%;
+  }
+}
+@media screen and (max-width: 421px) {
+  .skillIcon:hover {
+    font-size: 4.3rem;
+  }
+
+  .skillsContainer {
+    font-size: 3.1rem;
+  }
+  .expanded {
+    height: 145px;
+  }
+  .notExpanded {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 401px) {
+  .skillIcon:hover {
+    font-size: 4rem;
+  }
+
+  .skillsContainer {
+    font-size: 2.8rem;
+  }
+  .expanded {
+    height: 135px;
+  }
+  .notExpanded {
+    height: 95px;
+  }
+  .iconSpan span {
+    font-size: 1.2rem;
+  }
+  .iconSpan span {
+    top: 58px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .descrizione-certificazione {
+    font-size: 1.1rem;
+    padding-block: 1rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1.2rem;
+
+    padding-inline: 17px;
+  }
+}
+
+@media screen and (max-width: 363px) {
+  .skillIcon:hover {
+    font-size: 3.6rem;
+  }
+
+  .skillsContainer {
+    font-size: 2.6rem;
+  }
+  .expanded {
+    height: 135px;
+  }
+  .notExpanded {
+    height: 95px;
+  }
+  .iconSpan span {
+    font-size: 1.2rem;
+  }
+  .iconSpan span {
+    top: 58px;
+  }
+  .skillsType {
+    font-size: 1.3rem;
+  }
+  .descrizione-certificazione {
+    font-size: 1rem;
+    padding-block: 0.9rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1.1rem;
+
+    padding-inline: 10px;
+  }
+  .appTop {
+    background-size: auto 19%;
+  }
+}
+
+@media screen and (max-width: 302px) {
+  .descrizione-certificazione {
+    font-size: 0.9rem;
+    padding-block: 0.9rem;
+  }
+  .descrizione-certificazione a {
+    font-size: 1rem;
+
+    padding-inline: 10px;
+    padding-block: 5px;
+  }
+  .cvDownloader a {
+    font-size: 1.1rem;
+  }
+}
+
+/*---------darkMode--------*/
+
+.dark-mode {
+  background-color: #1a2c3e;
 }

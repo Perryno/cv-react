@@ -6,7 +6,7 @@ import pdfPekit from "../Assets/CertificazionePEKITEXPERT.pdf";
 function Certificazioni() {
   return (
     <div className="row">
-      <div className="col-sm-12 col-md-6 certificazione-box">
+      <div className="col-sm-12 col-md-6 certificazione-box EPICODE">
         <div className="certificazione-image sfondoEpicode">
           <img src={Epicode} alt="Certificazione EPICODE" />
           <div className="descrizione-certificazione descrizioneEpicode">
@@ -18,7 +18,7 @@ function Certificazioni() {
         </div>
       </div>
 
-      <div className="col-sm-12 col-md-6 certificazione-box">
+      <div className="col-sm-12 col-md-6 certificazione-box ">
         <div className="certificazione-image sfondoPekit">
           <img src={Pekit} alt="Certificazione Pekit" />
           <div className="descrizione-certificazione descrizionePekit">

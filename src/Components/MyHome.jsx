@@ -7,7 +7,7 @@ function MyHome() {
   return (
     <div>
       <div id="home" className="row mb-5">
-        <div className="leftHome col-sm-6">
+        <div className="leftHome col-md-6">
           <div className="mb-4">
             <h1 id="name">
               <div>Andrea</div>
@@ -17,7 +17,7 @@ function MyHome() {
           </div>
           <HomeContacts />
         </div>
-        <div className="rightHome col-sm-6 flex-column">
+        <div className="rightHome col-md-6 flex-column">
           <img src={laptopImg} alt="laptop" />
           <div className="descrizioneMia">
             Mi chiamo Andrea Caforio, ho 21 anni e sono nato a Vigevano, la città della piazza Ducale. Sin da piccolo ho

@@ -42,7 +42,9 @@ function FrontEndCompetenze() {
         ${frontIsHovering ? "expanded" : "notExpanded"} `}
         >
           <div className="typeContainer">
-            <div className="skillsType">Frontend:</div>
+            <div className="skillsType">
+              Frontend<span className="skillsSpan">&nbsp;skills</span>:{" "}
+            </div>
             <div className="skillsContainer">
               <div className="iconSpan">
                 <BiLogoHtml5

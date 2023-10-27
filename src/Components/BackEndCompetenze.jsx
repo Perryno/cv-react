@@ -39,7 +39,9 @@ function BackEndCompetenze() {
           ${frontIsHovering ? "expanded" : "notExpanded"} `}
         >
           <div className="typeContainer">
-            <div className="skillsType backend">Backend:</div>
+            <div className="skillsType backend">
+              Backend<span className="skillsSpan">&nbsp;skills</span>:
+            </div>
             <div className="skillsContainer">
               <div className="iconSpan">
                 <BiLogoJava
