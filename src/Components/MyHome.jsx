@@ -1,6 +1,6 @@
 import React from "react";
 
-import laptopImg from "../Assets/laptop.png";
+import foto from "../Assets/Foto Tonda.png";
 import HomeContacts from "./HomeComponents/HomeContacts";
 
 function MyHome({ darkMode }) {
@@ -18,7 +18,7 @@ function MyHome({ darkMode }) {
           <HomeContacts darkMode={darkMode} />
         </div>
         <div className="rightHome col-md-6 flex-column">
-          <img src={laptopImg} alt="laptop" />
+          <img src={foto} alt="laptop" />
           <div className={`descrizioneMia ${darkMode ? "dark-mode-testo" : ""}`}>
             Mi chiamo Andrea Caforio, ho 21 anni e sono nato a Vigevano, la città della piazza Ducale. Sin da piccolo ho
             avuto la passione per l'informatica e i suoi device, sconfinando spesso in primitivi e improbabili
