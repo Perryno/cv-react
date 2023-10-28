@@ -14,13 +14,15 @@ function Lavori({ darkMode }) {
           <div className="col-sm-12 col-md-6 flex-grow-1">
             <Estremo darkMode={darkMode} />
           </div>
-          <div className="col-sm-12 col-md-6 flex-grow-1">
-            <Netflix darkMode={darkMode} />
-          </div>
 
           <div className="col-sm-12 col-md-6 flex-grow-1">
             <Weather darkMode={darkMode} />
           </div>
+
+          <div className="col-sm-12 col-md-6 flex-grow-1">
+            <Netflix darkMode={darkMode} />
+          </div>
+
           <div className="col-sm-12 col-md-6 flex-grow-1">
             <Quiz darkMode={darkMode} />
           </div>
