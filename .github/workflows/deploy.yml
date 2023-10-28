@@ -22,8 +22,8 @@ jobs:
       - name: Deploy to Aruba
         uses: appleboy/ssh-action@master
         with:
-          host: 80.88.84.50
-          username: "andrea"
+          host: ${{ secrets.ARUBA_HOST }}
+          username: ${{ secrets.ARUBA_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /httpdocs
