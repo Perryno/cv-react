@@ -26,6 +26,6 @@ jobs:
           username: andrea
           key: parona2023
           script: |
-            cd /path/to/your/website
+            cd /httpdocs
             rm -rf * # Rimuovi i file esistenti
             scp -r build/* . # Copia i nuovi file build
