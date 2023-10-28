@@ -430,6 +430,7 @@
   margin-right: 0.5rem;
   font-weight: 600;
   color: white;
+  cursor: default;
 }
 
 .skillsContainer {
@@ -460,14 +461,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  cursor: default;
   position: relative;
 }
 
 .iconSpan span {
   font-size: 1.5rem;
   position: absolute;
-
+  cursor: default;
   transition: all 0.3s ease-in-out;
   pointer-events: none;
   top: 67px;
