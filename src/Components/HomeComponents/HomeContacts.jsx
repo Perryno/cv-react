@@ -11,7 +11,7 @@ function HomeContacts({ darkMode }) {
         <div className={`preContact d-inline ${darkMode ? "dark-mode-testo" : ""}`}>
           {" "}
           <BsFillTelephoneFill className="text-success" id="telephoneIcon" /> Tel:&nbsp;
-          <a className={`linkColor ${darkMode ? "dark-mode-link" : ""}`} href="tel:4381159134">
+          <a className={`linkColor ${darkMode ? "dark-mode-link" : ""}`} href="tel:3481159134">
             3481159134
           </a>
         </div>{" "}
