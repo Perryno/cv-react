@@ -2,7 +2,7 @@ import { React, useState, useCallback } from "react";
 
 import { BiLogoTypescript, BiLogoPostgresql, BiLogoJava, BiLogoSpringBoot } from "react-icons/bi";
 
-function BackEndCompetenze() {
+function BackEndCompetenze({ darkMode }) {
   const [frontIsHovering, setFrontIsHovering] = useState(false);
 
   const [whichIsHovering, setWhichIsHovering] = useState(null);
@@ -39,11 +39,11 @@ function BackEndCompetenze() {
           ${frontIsHovering ? "expanded" : "notExpanded"} `}
         >
           <div className="typeContainer">
-            <div className="skillsType backend">
+            <div className={`skillsType backend ${darkMode ? "dark-mode-testo" : ""}`}>
               Backend<span className="skillsSpan">&nbsp;skills</span>:
             </div>
             <div className="skillsContainer">
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoJava
                   id="java"
                   className="skillIcon"
@@ -56,7 +56,7 @@ function BackEndCompetenze() {
                 <span className={hideOrNot("Java")}>Java</span>
               </div>
 
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoTypescript
                   id="typescript"
                   className="skillIcon"
@@ -70,7 +70,7 @@ function BackEndCompetenze() {
                 <span className={hideOrNot("Typescript")}>Typescript</span>
               </div>
 
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoSpringBoot
                   id="spring"
                   className="skillIcon"
@@ -82,7 +82,7 @@ function BackEndCompetenze() {
                 />
                 <span className={hideOrNot("Spring")}>Spring</span>
               </div>
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoPostgresql
                   id="postgresql"
                   className="skillIcon"

@@ -5,24 +5,24 @@ import Netflix from "./LavoriSingoli/Netflix";
 import Weather from "./LavoriSingoli/Weather";
 import Quiz from "./LavoriSingoli/Quiz";
 
-function Lavori() {
+function Lavori({ darkMode }) {
   return (
     <div>
-      <div className="mieiProgetti">Alcuni dei miei progetti:</div>
+      <div className={`mieiProgetti ${darkMode ? "dark-mode-testo" : ""}`}>Alcuni dei miei progetti:</div>
       <div>
         <div className="progetti row">
           <div className="col-sm-12 col-md-6 flex-grow-1">
-            <Estremo />
+            <Estremo darkMode={darkMode} />
           </div>
           <div className="col-sm-12 col-md-6 flex-grow-1">
-            <Netflix />
+            <Netflix darkMode={darkMode} />
           </div>
 
           <div className="col-sm-12 col-md-6 flex-grow-1">
-            <Weather />
+            <Weather darkMode={darkMode} />
           </div>
           <div className="col-sm-12 col-md-6 flex-grow-1">
-            <Quiz />
+            <Quiz darkMode={darkMode} />
           </div>
         </div>
       </div>

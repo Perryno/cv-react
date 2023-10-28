@@ -4,7 +4,7 @@ import { FaSass, FaBootstrap } from "react-icons/fa";
 
 import { BiLogoJavascript, BiLogoReact, BiLogoHtml5, BiLogoRedux, BiLogoCss3 } from "react-icons/bi";
 
-function FrontEndCompetenze() {
+function FrontEndCompetenze({ darkMode }) {
   const [frontIsHovering, setFrontIsHovering] = useState(false);
 
   const [whichIsHovering, setWhichIsHovering] = useState(null);
@@ -36,17 +36,17 @@ function FrontEndCompetenze() {
   return (
     <div className="frontendBlock">
       <div className="allCompetenze">
-        <div className="leMieComp">Le mie competenze:</div>
+        <div className={`leMieComp ${darkMode ? "dark-mode-testo" : ""}`}>Le mie competenze:</div>
         <div
           className={`frontEndSkills box
         ${frontIsHovering ? "expanded" : "notExpanded"} `}
         >
           <div className="typeContainer">
-            <div className="skillsType">
+            <div className={`skillsType ${darkMode ? "dark-mode-testo" : ""}`}>
               Frontend<span className="skillsSpan">&nbsp;skills</span>:{" "}
             </div>
             <div className="skillsContainer">
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoHtml5
                   id="html5"
                   className="skillIcon"
@@ -60,7 +60,7 @@ function FrontEndCompetenze() {
                 <span className={hideOrNot("HTML5")}>HTML5</span>
               </div>
 
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoCss3
                   id="css"
                   className="skillIcon"
@@ -72,7 +72,7 @@ function FrontEndCompetenze() {
                 />
                 <span className={hideOrNot("CSS")}>CSS</span>
               </div>
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoJavascript
                   id="js"
                   className="skillIcon"
@@ -84,7 +84,7 @@ function FrontEndCompetenze() {
                 />
                 <span className={hideOrNot("Javascript")}>JavaScript</span>
               </div>
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoReact
                   id="react"
                   className="skillIcon"
@@ -96,7 +96,7 @@ function FrontEndCompetenze() {
                 />
                 <span className={hideOrNot("React")}>React</span>
               </div>
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <BiLogoRedux
                   id="redux"
                   className="skillIcon"
@@ -109,7 +109,7 @@ function FrontEndCompetenze() {
                 <span className={hideOrNot("Redux")}>Redux</span>
               </div>
 
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <FaBootstrap
                   id="bootstrap"
                   className="skillIcon"
@@ -121,7 +121,7 @@ function FrontEndCompetenze() {
                 />
                 <span className={hideOrNot("Bootstrap")}>Bootstrap</span>
               </div>
-              <div className="iconSpan">
+              <div className={`iconSpan ${darkMode ? "dark-span" : ""}`}>
                 <FaSass
                   id="sass"
                   className="skillIcon"

@@ -3,23 +3,23 @@ import React from "react";
 import laptopImg from "../Assets/laptop.png";
 import HomeContacts from "./HomeComponents/HomeContacts";
 
-function MyHome() {
+function MyHome({ darkMode }) {
   return (
     <div>
       <div id="home" className="row mb-5">
         <div className="leftHome col-md-6">
-          <div className="mb-4">
+          <div className={`mb-4 ${darkMode ? "dark-mode-testo" : ""}`}>
             <h1 id="name">
               <div>Andrea</div>
               <div className="ms-4 ">Caforio</div>
             </h1>
             <h2 className="role">Junior Full Stack Developer</h2>
           </div>
-          <HomeContacts />
+          <HomeContacts darkMode={darkMode} />
         </div>
         <div className="rightHome col-md-6 flex-column">
           <img src={laptopImg} alt="laptop" />
-          <div className="descrizioneMia">
+          <div className={`descrizioneMia ${darkMode ? "dark-mode-testo" : ""}`}>
             Mi chiamo Andrea Caforio, ho 21 anni e sono nato a Vigevano, la città della piazza Ducale. Sin da piccolo ho
             avuto la passione per l'informatica e i suoi device, sconfinando spesso in primitivi e improbabili
             hackeraggi (facevo il root per il telefono android e il jailbreak per l' iPhone... ). Con i soldi ricevuti
