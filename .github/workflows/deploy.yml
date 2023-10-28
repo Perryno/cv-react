@@ -22,9 +22,9 @@ jobs:
       - name: Deploy to Aruba
         uses: appleboy/ssh-action@master
         with:
-          host: ftp.andreacaforio.it
-          username: andrea
-          key: parona2023
+          host: 80.88.84.50
+          username: "andrea"
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /httpdocs
             rm -rf * # Rimuovi i file esistenti
