@@ -22,9 +22,9 @@ function MyHome({ darkMode }) {
           <div className={`descrizioneMia ${darkMode ? "dark-mode-testo" : ""}`}>
             Mi chiamo Andrea Caforio, ho 21 anni e sono nato a Vigevano, la città della piazza Ducale. Sin da piccolo ho
             avuto la passione per l'informatica e i suoi device, sconfinando spesso in primitivi e improbabili
-            hackeraggi (facevo il root per il telefono android e il jailbreak per l' iPhone... ). Con i soldi ricevuti
-            per il mio diciottesimo compleanno ho assemblato il mio primo computer e programmare, adesso, è la mia
-            passione, da trasformare nel mio nuovo futuro lavorativo!
+            hackeraggi (facevo il root al telefono android e il jailbreak all'iPhone... ). Con i soldi ricevuti per il
+            mio diciottesimo compleanno ho assemblato il mio primo computer e programmare, adesso, è la mia passione, da
+            trasformare nel mio futuro lavorativo!
           </div>
         </div>
       </div>
